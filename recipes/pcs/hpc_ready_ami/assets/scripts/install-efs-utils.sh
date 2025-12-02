@@ -9,6 +9,8 @@ set -o errexit -o pipefail -o nounset
 # Force non-interactive mode for Image Builder
 export DEBIAN_FRONTEND=noninteractive
 
+apt-get update -y
+
 # Find the directory of the current script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
