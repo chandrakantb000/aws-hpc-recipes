@@ -134,7 +134,7 @@ Resources:
       Parameters:
         HpcRecipesS3Bucket: !Ref HpcRecipesS3Bucket
         HpcRecipesBranch: !Ref HpcRecipesBranch
-      TemplateURL: !Sub 'https://github.com/aws-samples/aws-hpc-recipes/blob/main/recipes/pcs/hpc_ready_ami/assets/create-pcs-image.yaml'
+      TemplateURL: !Sub 'https://github.com/chandrakantb000/aws-hpc-recipes/blob/main/recipes/pcs/hpc_ready_ami/assets/create-pcs-image.yaml'
   PCSImageRecipe:
     Type: AWS::ImageBuilder::ImageRecipe
     Properties:
