@@ -48,7 +48,7 @@ Resources:
                 action: WebDownload
                 inputs:
   ###                - source: https://${HpcRecipesS3Bucket}.s3.us-east-1.amazonaws.com/${HpcRecipesBranch}/recipes/pcs/hpc_ready_ami/assets/scripts/install-efs-utils.sh
-                  - source: https://github.com/chandrakantb000/aws-hpc-recipes/blob/main/recipes/pcs/hpc_ready_ami/assets/scripts/install-efs-utils.sh
+                  - source: https://raw.githubusercontent.com/chandrakantb000/aws-hpc-recipes/blob/main/recipes/pcs/hpc_ready_ami/assets/scripts/install-efs-utils.sh
 
                     destination: install-efs-utils.sh
               - name: InstallEfsUtils
