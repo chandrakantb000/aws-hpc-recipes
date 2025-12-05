@@ -41,7 +41,7 @@ build_and_install_rpm() {
 build_and_install_deb() {
     logger "DEB install from source" "INFO"
     sudo apt-get update
-    sudo apt-get -y install git binutils rustc cargo pkg-config libssl-dev golang
+    sudo apt-get -y install git binutils rustc cargo pkg-config libssl-dev golang-go cmake build-essential
     # Create a temporary directory
     local temp_dir=$(mktemp -d)
     cd "$temp_dir" || exit 1
