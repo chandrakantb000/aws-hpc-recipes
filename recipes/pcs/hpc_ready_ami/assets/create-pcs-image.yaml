@@ -134,7 +134,7 @@ Resources:
       Parameters:
         HpcRecipesS3Bucket: !Ref HpcRecipesS3Bucket
         HpcRecipesBranch: !Ref HpcRecipesBranch
-      TemplateURL: !Sub 'https://nested-imagebuilder-components.s3.us-east-2.amazonaws.com/nested-imagebuilder-components.yaml'
+      TemplateURL: !Sub 'https://custom-hpc-ami.s3.us-east-2.amazonaws.com/hpc_ready_ami/assets/nested-imagebuilder-components.yaml'
   PCSImageRecipe:
     Type: AWS::ImageBuilder::ImageRecipe
     Properties:
